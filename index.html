@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Management System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Student Management System</h1>
+
+    <form id="studentForm">
+        <input type="hidden" id="editIndex">
+
+        <input type="text" id="name" placeholder="Student Name" required>
+
+        <input type="text" id="id" placeholder="Student ID" required>
+
+        <select id="department" required>
+            <option value="">Select Department</option>
+            <option>CSE</option>
+            <option>EEE</option>
+            <option>BBA</option>
+            <option>English</option>
+        </select>
+
+        <input type="number" id="cgpa" placeholder="CGPA" step="0.01" required>
+
+        <button type="submit">Save Student</button>
+    </form>
+
+    <div class="search-section">
+        <input type="text" id="search" placeholder="Search Student">
+
+        <select id="filterDept">
+            <option value="">All Departments</option>
+            <option>CSE</option>
+            <option>EEE</option>
+            <option>BBA</option>
+            <option>English</option>
+        </select>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>ID</th>
+                <th>Department</th>
+                <th>CGPA</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="studentTable"></tbody>
+    </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
