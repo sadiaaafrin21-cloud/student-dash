@@ -1,0 +1,20 @@
+.container, .card {
+    box-sizing: border-box;
+    padding: 20px;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+th, td {
+    padding: 8px 4px;
+    text-align: center;
+    word-wrap: break-word;
+    font-size: 14px;
+}
